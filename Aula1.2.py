@@ -20,8 +20,8 @@ while True:
         print(f"{nome} tem um IMC de {imc:.1f} que é uma obesidade classe II")
     else:
         print(f"{nome} tem um IMC de {imc:.1f} que é uma obesidade classe III")
-    final = int(input("Digite 1 para terminar "))
-    if final == 1:
+    final = input("Digite 1 para terminar ")
+    if final == "1":
         print("Terminando...")
         break
     else:
