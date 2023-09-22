@@ -10,7 +10,7 @@ while True:
                    D -> Desquitado/a
                    """)
     estciv = estciv.upper()
-    if estciv not in ("S", "C", "V", "D", "SOLTEIRO", "CASADO", "DIVORCIADO", "DESQUITADO"):
+    if estciv not in ("S", "C", "V", "D", "SOLTEIRO", "CASADO", "VIUVO", "DESQUITADO", "SOLTEIRA", "CASADA", "VIUVA", "DESQUITADA"):
         print("Digite apenas S/C/V/D!")
     else:
         if estciv in ("S", "SOLTEIRO"):
