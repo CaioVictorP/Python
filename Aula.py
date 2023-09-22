@@ -12,10 +12,10 @@ while True:
         elif estciv == "V":
             estciv = "Viuvo/a"
         else:
-            estciv == "Divorciado/a"
+            estciv = "Divorciado/a"
         print(f"{nome} é {estciv}")
-        final = int(input("Digite 1 para terminar e 2 para repetir "))
-        if final == 2:
+        final = input("Digite 1 para repetir ")
+        if final == "1":
             print("Recomeçando...")
         else:
             print("Terminando")
