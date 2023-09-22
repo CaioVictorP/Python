@@ -1,18 +1,26 @@
 while True:
     nome = input("Digite o seu nome: ")
-    estciv = input("Digite o seu estado civil(S/C/V/D): ")
+    estciv = input("""Digite o seu estado civil: 
+                   S -> Solteiro/a
+
+                   C -> Casado/a
+
+                   V -> Viuvo/a
+
+                   D -> Desquitado/a
+                   """)
     estciv = estciv.upper()
-    if estciv != "S" and estciv != "C" and estciv != "V" and estciv != "D":
+    if estciv not in ("S", "C", "V", "D", "SOLTEIRO", "CASADO", "DIVORCIADO", "DESQUITADO"):
         print("Digite apenas S/C/V/D!")
     else:
-        if estciv == "S":
+        if estciv in ("S", "SOLTEIRO"):
             estciv = "Solteiro/a"
-        elif estciv == "C":
+        elif estciv in ("C", "CASADO"):
             estciv = "Casado/a"
-        elif estciv == "V":
+        elif estciv in ("V", "VIUVO"):
             estciv = "Viuvo/a"
         else:
-            estciv = "Divorciado/a"
+            estciv = "Desquitado/a"
         print(f"{nome} é {estciv}")
         final = input("Digite 1 para repetir ")
         if final == "1":
