@@ -15,18 +15,18 @@ while True:
             print("Digite apenas S/C/V/D!")
         else:
             break
-        if estciv in ("S", "SOLTEIRO"):
-            estciv = "Solteiro/a"
-        elif estciv in ("C", "CASADO"):
-            estciv = "Casado/a"
-        elif estciv in ("V", "VIUVO"):
-            estciv = "Viuvo/a"
-        else:
-            estciv = "Desquitado/a"
-        print(f"{nome} é {estciv}")
-        final = input("Digite 1 para repetir ")
-        if final == "1":
-            print("Recomeçando...")
-        else:
-            print("Terminando")
-            break
+    if estciv in ("S", "SOLTEIRO"):
+        estciv = "Solteiro/a"
+    elif estciv in ("C", "CASADO"):
+        estciv = "Casado/a"
+    elif estciv in ("V", "VIUVO"):
+        estciv = "Viuvo/a"
+    else:
+        estciv = "Desquitado/a"
+    print(f"{nome} é {estciv}")
+    final = input("Digite 1 para repetir ")
+    if final == "1":
+        print("Recomeçando...")
+    else:
+        print("Terminando")
+        break
