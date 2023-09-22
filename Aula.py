@@ -1,6 +1,7 @@
 while True:
     nome = input("Digite o seu nome: ")
-    estciv = input("""Digite o seu estado civil: 
+    while True:
+        estciv = input("""Digite o seu estado civil: 
                    S -> Solteiro/a
 
                    C -> Casado/a
@@ -9,10 +10,11 @@ while True:
 
                    D -> Desquitado/a
                    """)
-    estciv = estciv.upper()
-    if estciv not in ("S", "C", "V", "D", "SOLTEIRO", "CASADO", "VIUVO", "DESQUITADO", "SOLTEIRA", "CASADA", "VIUVA", "DESQUITADA"):
-        print("Digite apenas S/C/V/D!")
-    else:
+        estciv = estciv.upper()
+        if estciv not in ("S", "C", "V", "D", "SOLTEIRO", "CASADO", "VIUVO", "DESQUITADO", "SOLTEIRA", "CASADA", "VIUVA", "DESQUITADA"):
+            print("Digite apenas S/C/V/D!")
+        else:
+            break
         if estciv in ("S", "SOLTEIRO"):
             estciv = "Solteiro/a"
         elif estciv in ("C", "CASADO"):
