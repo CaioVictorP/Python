@@ -1,7 +1,7 @@
 while True:
     nome = input("Digite o seu nome: ")
     estciv = input("Digite o seu estado civil(S/C/V/D): ")
-    estciv.upper()
+    estciv = estciv.upper()
     if estciv != "S" and estciv != "C" and estciv != "V" and estciv != "D":
         print("Digite apenas S/C/V/D!")
     else:
@@ -14,7 +14,7 @@ while True:
         else:
             estciv == "Divorciado/a"
         print(f"{nome} é {estciv}")
-        final = int("Digite 1 para terminar e 2 para repetir ")
+        final = int(input("Digite 1 para terminar e 2 para repetir "))
         if final == 2:
             print("Recomeçando...")
         else:
