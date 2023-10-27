@@ -1,19 +1,10 @@
 while True:
-    num1 = int(input("Digite o primeiro número: "))
-    num2 = int(input("Digite o segundo número: "))
+    num1 = input("Digite o primeiro número: ")
+    num2 = input("Digite o segundo número: ")
     metodo = input("Digite a operação: (+, -, *, /) ")
-    if metodo == "+":
-        resultado = num1 + num2
-        print(f"O resultado da soma é {resultado}")
-    elif metodo == "-":
-        resultado = num1 - num2
-        print(f"O resultado da subtração é {resultado}")
-    elif metodo == "*":
-        resultado = num1 * num2
-        print (f"O resultado da multiplicação é {resultado}")
-    elif metodo == "/":
-        resultado = num1 / num2
-        print(f"O resultado da divisão é {resultado}")
+    if metodo == "+" or metodo == "-" or metodo == "*" or metodo == "/":
+        resultado = eval(num1 + metodo + num2)
+        print(resultado)
     else:
         print("Operação inválida! Coloque apenas +, -, * ou /!")
     end = input("Deseja continuar? (S/N): ")
