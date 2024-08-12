@@ -1,5 +1,5 @@
 
-val = int(input("Digite um número"))
+val = int(input("Digite um número: "))
 b = 1
 while val > 0:
     while b > 0:
